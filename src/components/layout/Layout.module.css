@@ -1,0 +1,16 @@
+.app {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+}
+
+.main {
+    width: 70%;
+    margin: 0, auto;
+    margin-bottom: 1rem;
+}
+
+.footer {
+    background-color: #666;
+    color: #fff;
+    padding: 2rem 1rem;
+}
