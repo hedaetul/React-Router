@@ -1,0 +1,28 @@
+.navbar {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navRouterItem {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+/* FIXME: NavItemActive style doesn't work after change path */
+.navItemActive {
+    color: #ff0000;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.navItem {
+    color: #fff;
+    text-decoration: none;
+}
