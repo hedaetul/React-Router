@@ -1,10 +1,11 @@
-import React from 'react';
-import Layout from './components/layout/Layout';
-import Home from './components/pages/Home';
-import About from './components/pages/About';
-import Help from './components/pages/Help';
-import classes from './App.module.css';
-import { Routes, Route, Link } from 'react-router-dom';
+import React from "react";
+import { Link, Route, Routes } from "react-router-dom";
+import classes from "./App.module.css";
+import About from "./pages/About";
+import Clock from "./pages/Clock";
+import Help from "./pages/Help";
+import Home from "./pages/Home";
+import Tasks from "./pages/Task";
 
 function App() {
   const path = window.location.pathname;
@@ -19,9 +20,9 @@ function App() {
             <ul className={classes.navRouterItem}>
               <li>
                 <Link
-                  to='/'
+                  to="/"
                   className={
-                    path === '/' ? classes.navItemActive : classes.navItem
+                    path === "/" ? classes.navItemActive : classes.navItem
                   }
                 >
                   Home
@@ -29,9 +30,9 @@ function App() {
               </li>
               <li>
                 <Link
-                  to='/about'
+                  to="/about"
                   className={
-                    path === '/about' ? classes.navItemActive : classes.navItem
+                    path === "/about" ? classes.navItemActive : classes.navItem
                   }
                 >
                   About
@@ -39,24 +40,45 @@ function App() {
               </li>
               <li>
                 <Link
-                  to='/help'
+                  to="/help"
                   className={
-                    path === '/help' ? classes.navItemActive : classes.navItem
+                    path === "/help" ? classes.navItemActive : classes.navItem
                   }
                 >
                   Help
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/clock"
+                  className={
+                    path === "/clock" ? classes.navItemActive : classes.navItem
+                  }
+                >
+                  Clock
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/tasks"
+                  className={
+                    path === "/tasks" ? classes.navItemActive : classes.navItem
+                  }
+                >
+                  Tasks
                 </Link>
               </li>
             </ul>
           </div>
         </nav>
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/help' element={<Help />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/help" element={<Help />} />
+          <Route path="/clock" element={<Clock />} />
+          <Route path="/tasks" element={<Tasks />} />
         </Routes>
       </div>
-   
     </div>
   );
 }

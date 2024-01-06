@@ -1,5 +1,5 @@
-import Layout from '../layout/Layout';
-import Section from '../section/Section';
+import Layout from '../components/layout/Layout';
+import Section from '../components/section/Section';
 
 const Experiences = [
   'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum repellendus laboriosam voluptatibus pariatur reiciendis. Est in beatae error facilis eos commodi asperiores ipsam distinctio voluptas, assumenda consectetur alias nobis. Dolore.',

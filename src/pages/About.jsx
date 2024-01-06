@@ -1,18 +1,18 @@
 import { useState } from "react";
-import ButtonInc from "../buttons-inc/ButtonInc";
-import DisplayCount from "../display-count/DisplayCount";
-import Layout from "../layout/Layout";
-import UpdateIncrementDecrement from "../update-inc/UpdateIncrementDecrement";
+import ButtonInc from "../components/buttons-inc/ButtonInc";
+import DisplayCount from "../components/display-count/DisplayCount";
+import Layout from "../components/layout/Layout";
+import UpdateIncrementDecrement from "../components/update-inc/UpdateIncrementDecrement";
 
 function About() {
   const [count, setCount] = useState(100);
   const [incrementValue, setIncrementValue] = useState(10);
   const [decrementValue, setDecrementValue] = useState(10);
 
-  const o = count || 50
-  console.log('value of 0', o);
+  const o = count || 50;
+  console.log("value of 0", o);
 
-  count && console.log('count has a value', o);
+  count && console.log("count has a value", o);
 
   function increment() {
     setCount(count + incrementValue);
